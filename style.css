@@ -221,3 +221,100 @@ font-family: 'Oxygen', sans-serif;
     font-size: 20px;
     text-align: center;
   }
+
+  /* //////////////////////////// 
+///////////////////// Sections /////////////////////// */
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap-reverse;
+  align-items: flex-start;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-family: "Bangers", cursive;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  transition: all 0.4s;
+  display: inline-block;
+  padding: 4px 32px;
+}
+
+.section-heading:hover {
+  padding: 4px 48px;
+  background-color: rgba(62, 150, 163, 0.8);
+}
+
+#section-source p {
+  padding: 8px;
+  text-align: center;
+}
+
+#section-source a {
+  margin: 8px;
+  text-align: center;
+}
+
+/* /////////////////
+/////////////////// Card //////////////// */
+
+.card {
+   flex: 0 1 100%;  
+}
+
+.card-image {
+  transition: 0.4s;
+}
+
+.card-image:hover {
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.card .card-description {
+  padding: 0 8px;
+  flex: 3 0 100%;  
+}
+
+/*  /////////////////////
+///////////////////////// Button Read more ///////////// */
+
+.btn-read-more {
+  padding: 8px 24px;
+  border: 3px solid black;
+  transition: 0.4s;
+  display: inline-block;
+  margin-bottom: 24px;
+  margin-left: 0px; 
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+  text-align: center;
+  
+}
+
+.btn-read-more:hover {
+  background-color: rgba(62, 150, 163, 0.8);
+  text-decoration: none;
+  padding: 8px 24px 8px 64px;
+  color: white;
+}
+
+
+
+
+
+/* about-text  */
+.card #article-about{
+  flex: 1 0 100%;  
+}
+
+
+
+ #article-about p {
+  font-family: "Oxygen", sans-serif;
+  font-size: 24px;
+  
+}

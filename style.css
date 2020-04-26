@@ -332,6 +332,9 @@ footer {
 
 footer a {
   color: white;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+
 }
 
 footer #left-footer {
@@ -403,10 +406,7 @@ footer #social-media-footer ul li:hover a .fa-instagram {
   #slideout-menu {
     display: block;
   }
-  #blogpost {
-    width: 100%;
-    border-left: 0;
-  }
+ 
   #sidebar {
     display: none;
   }

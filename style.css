@@ -320,6 +320,26 @@ section {
 }
 
 
+/* ///////////////Video section///////////////// */
+
+#video-section{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+
+#mpv:hover{
+  cursor: pointer;
+  
+}
+
+.contain{
+  object-fit: cover;
+}
+
+
 /* ////////////
 ////////////////// Footer ///  */
 
@@ -429,6 +449,8 @@ footer #social-media-footer ul li:hover a .fa-instagram {
   #logo-img {
     padding: 0;
   }
+
+  
 }
 
 @media (max-width: 719px) {
@@ -443,6 +465,18 @@ footer #social-media-footer ul li:hover a .fa-instagram {
   .card-image img {
     width: 100%;
   }
+
+  .video-card   {
+    width: 100%;
+    
+  }
+
+  #video1, #video2{
+    width: 100%;
+    
+  }
+
+ 
 
   footer {
     flex-direction: column;

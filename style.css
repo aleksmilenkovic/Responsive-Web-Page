@@ -267,6 +267,7 @@ section {
 
 .card-image {
   transition: 0.4s;
+  padding-left: 136px;
 }
 
 .card-image:hover {
@@ -276,6 +277,13 @@ section {
 .card .card-description {
   padding: 0 8px;
   flex: 3 0 100%;  
+}
+
+#paragraph{
+  font-family: 'Oxygen', sans-serif;
+
+  font-size: 24px;
+  
 }
 
 /*  /////////////////////
@@ -298,11 +306,9 @@ section {
 .btn-read-more:hover {
   background-color: rgba(62, 150, 163, 0.8);
   text-decoration: none;
-  padding: 8px 24px 8px 64px;
+  padding: 8px 64px;
   color: white;
 }
-
-
 
 
 
@@ -330,7 +336,7 @@ section {
 
 
 
-#mpv:hover{
+#video2{
   cursor: pointer;
   
 }
@@ -464,6 +470,11 @@ footer #social-media-footer ul li:hover a .fa-instagram {
   .card,
   .card-image img {
     width: 100%;
+  }
+
+  .card-image{
+    padding-left: 0;
+
   }
 
   .video-card   {

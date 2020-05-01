@@ -13,7 +13,7 @@ font-family: 'Oxygen', sans-serif;
   }
   
   h1 {
-    padding: 8px;
+    padding: 14px;
     background: rgba(62, 150, 163, 0.8);
     border-radius: 8px;
     margin: 0;
@@ -322,6 +322,7 @@ section {
  #article-about p {
   font-family: "Oxygen", sans-serif;
   font-size: 24px;
+  text-align: justify;
   
 }
 
@@ -344,6 +345,76 @@ section {
 .contain{
   object-fit: cover;
 }
+
+
+
+/* ////////////// Gallery ////////////////////////// */
+
+section #gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border:3px solid black;
+
+}
+
+#gallery-container .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  margin-bottom: 2px;  
+}
+
+.img1{flex:0.75;}
+.img2{flex:1.48;}
+.img3{flex:0.81;}
+.img4{flex:1.50;}
+
+
+.img5{flex:1.50;}
+.img6{flex:1.50;}
+.img7{flex:1.50;}
+.img8{flex:1.50;}  
+
+.img9{flex:1.50;}
+.img10{flex:1.50;}
+.img11{flex:1.50;}
+.img12{flex:1.50;}
+
+.img13{flex:1.50;}
+.img14{flex:1.50;}
+.img15{flex:1.50;}
+.img16{flex:1.50;}
+
+
+.img{
+   margin: 2px; 
+  
+}
+
+.img:hover{
+opacity: 0.6;
+}
+
+#gallery-container img{  
+  width: 100%;
+  height: auto;
+  vertical-align: middle; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ////////////
@@ -456,6 +527,12 @@ footer #social-media-footer ul li:hover a .fa-instagram {
     padding: 0;
   }
 
+  #article-about p{
+    font-size: 16px;
+  }
+
+
+
   
 }
 
@@ -487,7 +564,6 @@ footer #social-media-footer ul li:hover a .fa-instagram {
     
   }
 
- 
 
   footer {
     flex-direction: column;

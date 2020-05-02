@@ -195,8 +195,8 @@ font-family: 'Oxygen', sans-serif;
     margin-top: 72px;
     width: 100%;
     text-align: center;
-    opacity: 0;
     pointer-events: none;
+    visibility: hidden;
   }
   
   #slideout-menu ul {
@@ -528,7 +528,8 @@ footer #social-media-footer ul li:hover a .fa-instagram {
   }
 
   #article-about p{
-    font-size: 16px;
+    font-size: 18px;
+    text-align: justify;
   }
 
 
@@ -542,6 +543,7 @@ footer #social-media-footer ul li:hover a .fa-instagram {
   }
   section {
     flex-direction: column;
+    
   }
 
   .card,

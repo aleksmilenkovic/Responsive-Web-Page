@@ -1,3 +1,5 @@
+//Mobile menu and Icon//
+
 const menuIcon = document.getElementById("menu-icon");
 const slideoutMenu = document.getElementById("slideout-menu");
 const searchIcon = document.getElementById("search-icon");
@@ -14,18 +16,23 @@ searchIcon.addEventListener("click", function () {
 });
 
 menuIcon.addEventListener("click", function () {
-  if (slideoutMenu.style.opacity == "1") {
-    slideoutMenu.style.opacity = "0";
+  if (slideoutMenu.style.visibility == "visible") {
+    slideoutMenu.style.visibility = "hidden";
     slideoutMenu.style.pointerEvents = "none";
+    
   } else {
-    slideoutMenu.style.opacity = "1";
+    slideoutMenu.style.visibility = "visible";
     slideoutMenu.style.pointerEvents = "auto";
   }
 });
 
+// Read More Button 
+
 const readMore = document.getElementById("readMore");
 const paragraph = document.getElementById("paragraph");
+const scrollPoint = document.getElementById("aboutus");
 readMore.addEventListener("click", showMore());
+
 function showMore() {
   const text = document.getElementById("article-about");
 
@@ -33,11 +40,40 @@ function showMore() {
     text.style.display = "flex";
     readMore.innerText = "Read less...";
     paragraph.style.display = "none";
+    scrollPoint.scrollIntoView(true);
+    
+
   } else {
     text.style.display = "none";
     readMore.innerText = "Read More";
-    paragraph.style.display = "block";
+    paragraph.style.display = "flex";
+    scrollPoint.scrollIntoView(false);
 
+    
   }
-  //window.scrollTo(0, 2300);
+
 }
+
+
+
+
+
+// Close mobile menu//
+const content = document.getElementsByClassName('content');
+content.array.forEach(element => {
+  addEventListener('click', closeMenu)
+});
+
+function closeMenu(e){
+  console.log('clicked');
+  if(slideoutMenu.style.visibility == "visible"){
+    slideoutMenu.style.visibility = "hidden";
+  } else {
+    slideoutMenu.style.visibility = "visible";
+    
+  }
+  
+}
+
+
+

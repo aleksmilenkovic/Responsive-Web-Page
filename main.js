@@ -19,14 +19,13 @@ menuIcon.addEventListener("click", function () {
   if (slideoutMenu.style.visibility == "visible") {
     slideoutMenu.style.visibility = "hidden";
     slideoutMenu.style.pointerEvents = "none";
-    
   } else {
     slideoutMenu.style.visibility = "visible";
     slideoutMenu.style.pointerEvents = "auto";
   }
 });
 
-// Read More Button 
+// Read More Button
 
 const readMore = document.getElementById("readMore");
 const paragraph = document.getElementById("paragraph");
@@ -41,39 +40,25 @@ function showMore() {
     readMore.innerText = "Read less...";
     paragraph.style.display = "none";
     scrollPoint.scrollIntoView(true);
-    
-
   } else {
     text.style.display = "none";
     readMore.innerText = "Read More";
     paragraph.style.display = "flex";
     scrollPoint.scrollIntoView(false);
-
-    
   }
-
 }
 
-
-
-
-
 // Close mobile menu//
-const content = document.getElementsByClassName('content');
-content.array.forEach(element => {
-  addEventListener('click', closeMenu)
+const content = document.getElementsByClassName("content");
+content.array.forEach((element) => {
+  addEventListener("click", closeMenu);
 });
 
-function closeMenu(e){
-  console.log('clicked');
-  if(slideoutMenu.style.visibility == "visible"){
+function closeMenu(e) {
+  console.log("clicked");
+  if (slideoutMenu.style.visibility == "visible") {
     slideoutMenu.style.visibility = "hidden";
   } else {
     slideoutMenu.style.visibility = "visible";
-    
   }
-  
 }
-
-
-

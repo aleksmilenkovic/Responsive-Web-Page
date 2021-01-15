@@ -1,0 +1,24 @@
+{
+  "name": "responsive-web-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "lightbox2": "^2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksmilenkovic/Responsive-Web-Page.git"
+  },
+  "author": "Aleksandar Milenkovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksmilenkovic/Responsive-Web-Page/issues"
+  },
+  "homepage": "https://github.com/aleksmilenkovic/Responsive-Web-Page#readme"
+}

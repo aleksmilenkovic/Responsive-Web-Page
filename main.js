@@ -49,10 +49,11 @@ function showMore() {
 }
 
 // Close mobile menu//
-const content = document.getElementsByClassName("content");
-content.array.forEach((element) => {
-  addEventListener("click", closeMenu);
-});
+// const content = document.getElementsByClassName("content");
+// console.log(content);
+// content.forEach((element) => {
+//   addEventListener("click", closeMenu);
+// });
 
 function closeMenu(e) {
   console.log("clicked");
